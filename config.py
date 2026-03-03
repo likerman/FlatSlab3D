@@ -60,6 +60,13 @@ class ModelConfig:
     smoke_test: bool = False
     restart: bool = False
 
+    # boundary-condition drivers (top BC, km and cm/yr)
+    slab_top_vx_cm_per_yr: float = 2.5
+    ovr_top_vx_cm_per_yr: float = -5.0
+    slab_top_xspan_km: float = 250.0
+    ovr_top_xstart_km: float = 1700.0
+    bc_ramp_km: float = 40.0
+
     def __post_init__(self):
         if self.dip_wedge_flat is None:
             self.dip_wedge_flat = float(self.dip_in)
@@ -160,6 +167,17 @@ def validate_config(cfg: ModelConfig) -> None:
         errors.append("checkpoint_every debe ser > 0.")
     if int(cfg.checkpoint_every) > int(cfg.total_time_years):
         errors.append("checkpoint_every no puede ser mayor que total_time_years.")
+
+    if float(cfg.slab_top_xspan_km) <= 0.0:
+        errors.append("slab_top_xspan_km debe ser > 0.")
+    if float(cfg.bc_ramp_km) <= 0.0:
+        errors.append("bc_ramp_km debe ser > 0.")
+    if not (cfg.x_domain[0] <= float(cfg.ovr_top_xstart_km) <= cfg.x_domain[1]):
+        errors.append("ovr_top_xstart_km debe quedar dentro de x_domain.")
+    if float(cfg.slab_top_xspan_km) >= float(cfg.x_break):
+        errors.append("slab_top_xspan_km debe ser menor que x_break para no invadir la zona de subducción.")
+    if float(cfg.ovr_top_xstart_km) >= cfg.x_domain[1]:
+        errors.append("ovr_top_xstart_km debe ser menor que x_domain max.")
 
     if errors:
         raise ValueError("Configuración inválida:\n- " + "\n- ".join(errors))

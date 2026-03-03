@@ -67,6 +67,12 @@ CHECKPOINT_EVERY = cfg.checkpoint_every
 SMOKE_TEST = cfg.smoke_test
 RESTART = cfg.restart
 
+SLAB_TOP_VX_CM_PER_YR = cfg.slab_top_vx_cm_per_yr
+OVR_TOP_VX_CM_PER_YR = cfg.ovr_top_vx_cm_per_yr
+SLAB_TOP_XSPAN_KM = cfg.slab_top_xspan_km
+OVR_TOP_XSTART_KM = cfg.ovr_top_xstart_km
+BC_RAMP_KM = cfg.bc_ramp_km
+
 
 # ============================================================
 # BLOCK 1 — Imports & basic parameters
@@ -120,6 +126,10 @@ print(f"  slab thickness    = {SLAB_THICKNESS} km")
 print(f"  slab channel thk  = {SLAB_CHANNEL_THICKNESS} km")
 print(f"  overriding total  = {OVR_TOTAL_THICK} km (layers {OVR_LAYER_THICK} km)")
 print(f"  wedge length      = {OVR_KNEE_LENGTH} km (max thick {OVR_MAX_THICK_WEDGE} km)")
+print(
+    f"  top BC: slab Vx={SLAB_TOP_VX_CM_PER_YR} cm/yr in [0,{SLAB_TOP_XSPAN_KM}] km; "
+    f"over Vx={OVR_TOP_VX_CM_PER_YR} cm/yr from x={OVR_TOP_XSTART_KM} km; ramp={BC_RAMP_KM} km"
+)
 print("===========================")
 
 print("[OK] Loaded imports and basic parameters")
@@ -539,38 +549,12 @@ print("[OK] Rheology assigned to all materials")
 
 
 # ============================================================
-# BLOCK 11 — BCs + nodeSets (slab / buffer / overriding)
-#          + inflow left + controlled outflow right (smooth Z,Y)
+# BLOCK 11 — BCs (top/left/right)
+#          + inflow left + controlled outflow right (smooth Z)
 # ============================================================
-
-import numpy as np
-from mpi4py import MPI
-comm = MPI.COMM_WORLD
 
 # OJO: no re-definimos u. En tu script ya tenés: u = GEO.UnitRegistry
 # y ya importaste: import underworld as uw ; import underworld.function as fn ; from underworld import UWGeodynamics as GEO
-
-# -------------------------
-# Helper: Cuboid 3D via 6 HalfSpaces
-# -------------------------
-def cuboid_3d(GEO, *, xmin, xmax, ymin, ymax, zmin, zmax):
-    """
-    Shape 3D tipo caja [xmin,xmax]x[ymin,ymax]x[zmin,zmax]
-    usando intersección de 6 HalfSpaces.
-
-    Convención UWGeo HalfSpace: se queda con el lado opuesto al vector normal.
-    """
-    hs_xmin = GEO.shapes.HalfSpace(normal=(-1., 0., 0.), origin=(xmin, 0.*xmin, 0.*xmin))  # x >= xmin
-    hs_xmax = GEO.shapes.HalfSpace(normal=( 1., 0., 0.), origin=(xmax, 0.*xmax, 0.*xmax))  # x <= xmax
-
-    hs_ymin = GEO.shapes.HalfSpace(normal=(0., -1., 0.), origin=(0.*ymin, ymin, 0.*ymin))  # y >= ymin
-    hs_ymax = GEO.shapes.HalfSpace(normal=(0.,  1., 0.), origin=(0.*ymax, ymax, 0.*ymax))  # y <= ymax
-
-    hs_zmin = GEO.shapes.HalfSpace(normal=(0., 0., -1.), origin=(0.*zmin, 0.*zmin, zmin))  # z >= zmin
-    hs_zmax = GEO.shapes.HalfSpace(normal=(0., 0.,  1.), origin=(0.*zmax, 0.*zmax, zmax))  # z <= zmax
-
-    return hs_xmin & hs_xmax & hs_ymin & hs_ymax & hs_zmin & hs_zmax
-
 
 # -------------------------
 # Smooth helpers (ND functions)
@@ -583,10 +567,10 @@ def smoothstep01(t):
 
 
 # -------------------------
-# Velocidades (ND) para BCs y nodeSets
+# Velocidades (ND) para BCs
 # -------------------------
-v_slab_nd = float(GEO.nd(2.5 * u.centimeter / u.year))
-v_over_nd = float(GEO.nd(-5.0 * u.centimeter / u.year))  # negativo
+v_slab_nd = float(GEO.nd(float(SLAB_TOP_VX_CM_PER_YR) * u.centimeter / u.year))
+v_over_nd = float(GEO.nd(float(OVR_TOP_VX_CM_PER_YR) * u.centimeter / u.year))  # negativo
 
 
 # -------------------------
@@ -595,62 +579,42 @@ v_over_nd = float(GEO.nd(-5.0 * u.centimeter / u.year))  # negativo
 xL = X_DOMAIN[0] * u.kilometer
 xB = X_BREAK      * u.kilometer
 xR = X_DOMAIN[1] * u.kilometer
-xO0 = 1700.0 * u.kilometer
-
-y0 = Y_DOMAIN[0] * u.kilometer
-y1 = Y_DOMAIN[1] * u.kilometer
+xO0 = float(OVR_TOP_XSTART_KM) * u.kilometer
 
 # espesores “driving” (dimensional, positivos; z es negativo hacia abajo)
 SLAB_DRV_THICK = float(SLAB_THICKNESS)  * u.kilometer
 OVR_DRV_THICK  = float(OVR_TOTAL_THICK) * u.kilometer
 eps = 1e-6 * u.kilometer
-SLAB_DRIVER_XSPAN = 250.0 * u.kilometer
+SLAB_DRIVER_XSPAN = float(SLAB_TOP_XSPAN_KM) * u.kilometer
 x_slab_driver_max = min(xL + SLAB_DRIVER_XSPAN, xB - eps)
 
 
 # -------------------------
-# nodeSets shapes (volumen superior)
+# Coordenadas ND para funciones de BC
 # -------------------------
-slab_driver_shape = cuboid_3d(
-    GEO,
-    xmin=xL,
-    xmax=x_slab_driver_max,
-    ymin=y0,
-    ymax=y1,
-    zmin=-SLAB_DRV_THICK,
-    zmax=0.0 * u.kilometer
-)
-
-over_driver_shape = cuboid_3d(
-    GEO,
-    xmin=xO0 + eps,
-    xmax=xR,
-    ymin=y0,
-    ymax=y1,
-    zmin=-OVR_DRV_THICK,
-    zmax=0.0 * u.kilometer
-)
-
-
-# -------------------------
-# Taper en Y (ventana suave) — evita “clavar” todo en y=0 y y=Ymax
-# -------------------------
-y = Model.y  # ND
-
-
-# -------------------------
-# Taper en Z (profundidad) para los drivers volumétricos (nodeSets)
-# -------------------------
+x = Model.x  # ND
 z = Model.z  # ND, negativo hacia abajo
 
-taperZ = 1.0
-
-
 # -------------------------
-# nodeSet velocity functions (ND)
+# Top BC por placas (slab / overriding) vía ventanas en X
 # -------------------------
-vx_slab_fn = v_slab_nd * taperZ
-vx_over_fn = v_over_nd * taperZ
+ramp_top_nd = float(GEO.nd(float(BC_RAMP_KM) * u.kilometer))
+xL_nd = float(GEO.nd(xL))
+xS_nd = float(GEO.nd(x_slab_driver_max))
+xO_nd = float(GEO.nd(xO0 + eps))
+xR_nd = float(GEO.nd(xR))
+
+t_up_slab = clamp01((x - xL_nd) / max(1e-30, ramp_top_nd))
+t_dn_slab = clamp01((xS_nd - x) / max(1e-30, ramp_top_nd))
+w_top_slab = smoothstep01(t_up_slab) * smoothstep01(t_dn_slab)
+
+t_up_over = clamp01((x - xO_nd) / max(1e-30, ramp_top_nd))
+t_dn_over = clamp01((xR_nd - x) / max(1e-30, ramp_top_nd))
+w_top_over = smoothstep01(t_up_over) * smoothstep01(t_dn_over)
+
+# En top imponemos Vx por segmento: slab (+) y overriding (-).
+# En la zona intermedia queda Vx=0 (transición natural).
+vx_top_fn = v_slab_nd * w_top_slab + v_over_nd * w_top_over
 
 
 # -------------------------
@@ -703,34 +667,27 @@ vx_right_fn = v_right_out_mag_nd * tZ_right_mantle
 
 
 # -------------------------
-# BCs globales + nodeSets
+# BCs globales
 # -------------------------
 Model.set_velocityBCs(
     left=[vx_left_fn,   None, None],
     right=[vx_right_fn, None, None],
     front=[None, 0.0, None],
     back=[None,  0.0, None],
-    top=[None, None, 0.0],
+    top=[vx_top_fn, None, 0.0],
     bottom=[None, None, 0.0],
 )
 
-# -------------------------
-# Diagnóstico rápido: tamaños globales de nodeSets (útil en MPI)
-# -------------------------
-coords = Model.mesh.data
-mask_slab = slab_driver_shape.evaluate(coords)
-mask_over = over_driver_shape.evaluate(coords)
-
-Nslab = comm.allreduce(int(np.sum(mask_slab)), op=MPI.SUM)
-Nover = comm.allreduce(int(np.sum(mask_over)), op=MPI.SUM)
-
 if uw.mpi.rank == 0:
-    print("[OK] BLOCK 11: BCs only on walls set (no volumetric nodeSets).")
+    print("[OK] BLOCK 11: boundary velocity BCs set (left/right/top).")
     print(
         f"      v_slab_nd={v_slab_nd:.4e}  v_over_nd={v_over_nd:.4e}  "
         f"v_left_out_mantle_nd={v_left_out_mag_nd:.4e}  v_right_out_mantle_nd={v_right_out_mag_nd:.4e}"
     )
-    print(f"      nodeSets global counts: slab={Nslab}  over={Nover}")
+    print(
+        f"      top windows X (km): slab=[{xL.to(u.kilometer).m:.1f}, {x_slab_driver_max.to(u.kilometer).m:.1f}]  "
+        f"over=[{(xO0 + eps).to(u.kilometer).m:.1f}, {xR.to(u.kilometer).m:.1f}]"
+    )
 
 ## TEST 01
 
