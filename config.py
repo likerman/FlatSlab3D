@@ -21,7 +21,7 @@ class ModelConfig:
     # mesh + swarm
     nx: int = 88
     ny: int = 176
-    nz: int = 84
+    nz: int = 68
     ppc: int = 30
     pop: int = 40
 
@@ -32,7 +32,7 @@ class ModelConfig:
     # global geometry
     x_domain: Tuple[float, float] = (0.0, 2000.0)
     y_domain: Tuple[float, float] = (0.0, 4000.0)
-    z_domain: Tuple[float, float] = (-1000.0, 0.0)
+    z_domain: Tuple[float, float] = (-800.0, 0.0)
 
     n_trans_segments: int = 8
     n_xsub: int = 80

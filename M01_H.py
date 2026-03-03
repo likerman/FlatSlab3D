@@ -193,7 +193,7 @@ if reGridZ:
     beta = reGrid_beta
 
     # límites verticales del dominio
-    am = Model.mesh.minCoord[2]  # z_min  ~ -1000 km
+    am = Model.mesh.minCoord[2]  # z_min (según Z_DOMAIN)
     bm = Model.mesh.maxCoord[2]  # z_max  ~ 0 km
     
     # coordenadas actuales en z de todos los nodos
@@ -658,7 +658,8 @@ vx_over_fn = v_over_nd * taperZ
 # -------------------------
 H_slab_nd = float(GEO.nd(SLAB_DRV_THICK))
 H_ovr_nd = float(GEO.nd(OVR_DRV_THICK))
-d_max_nd = float(GEO.nd(990.0 * u.kilometer))
+# Limit outflow windows to the upper mantle only (z >= -660 km).
+d_max_nd = float(GEO.nd(660.0 * u.kilometer))
 wedge_out_nd = float(GEO.nd(40.0 * u.kilometer))
 
 tZ_left_in = fn.branching.conditional([
