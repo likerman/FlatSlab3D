@@ -711,10 +711,6 @@ Model.set_velocityBCs(
     back=[None,  0.0, None],
     top=[None, None, 0.0],
     bottom=[None, None, 0.0],
-    nodeSets=[
-        (slab_driver_shape, [vx_slab_fn, None, None]),
-        (over_driver_shape, [vx_over_fn, None, None]),
-    ]
 )
 
 # -------------------------
@@ -728,7 +724,7 @@ Nslab = comm.allreduce(int(np.sum(mask_slab)), op=MPI.SUM)
 Nover = comm.allreduce(int(np.sum(mask_over)), op=MPI.SUM)
 
 if uw.mpi.rank == 0:
-    print("[OK] BLOCK 11: BCs (left/right controlled) + nodeSets (slab/over) set.")
+    print("[OK] BLOCK 11: BCs only on walls set (no volumetric nodeSets).")
     print(
         f"      v_slab_nd={v_slab_nd:.4e}  v_over_nd={v_over_nd:.4e}  "
         f"v_left_out_mantle_nd={v_left_out_mag_nd:.4e}  v_right_out_mantle_nd={v_right_out_mag_nd:.4e}"
