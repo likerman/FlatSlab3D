@@ -1,0 +1,578 @@
+unload bsc/1.0 (PATH, MANPATH)
+unload UCX/1.15.0 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+remove mkl/2023.2.0 (LD_LIBRARY_PATH)
+remove impi/2021.10.0 (PATH, MANPATH, LD_LIBRARY_PATH)
+load SINGULARITY/3.11.5 (PATH)
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: gs20r3b13
+  Location: mtl_ofi_component.c:513
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[gs20r3b13:1247820] 265 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[gs20r3b13:1247820] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[gs20r3b13:1247820] 14 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
+/opt/venv/lib64/python3.11/site-packages/underworld/UWGeodynamics/_model.py:1595: UserWarning: Skipping the steady state calculation: No diffusivity variable defined on Model
+  warnings.warn("Skipping the steady state calculation: No diffusivity variable defined on Model")
