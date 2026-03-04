@@ -132,7 +132,8 @@ print(f"  slab x-subsegments = main:{N_XSUB} transition:{N_XSUB_TRANS}")
 print(f"  overriding total  = {OVR_TOTAL_THICK} km (layers {OVR_LAYER_THICK} km)")
 print(f"  wedge length      = {OVR_KNEE_LENGTH} km (max thick {OVR_MAX_THICK_WEDGE} km)")
 print(
-    f"  top BC: slab Vx={SLAB_TOP_VX_CM_PER_YR} cm/yr in [0,{SLAB_TOP_XSPAN_KM}] km; ramp={BC_RAMP_KM} km"
+    f"  top BC: slab Vx={SLAB_TOP_VX_CM_PER_YR} cm/yr in [0,{SLAB_TOP_XSPAN_KM}] km; "
+    f"over Vx={OVR_TOP_VX_CM_PER_YR} cm/yr from x={OVR_TOP_XSTART_KM} km; ramp={BC_RAMP_KM} km"
 )
 print(
     f"  right BC: overriding inflow Vx={OVR_TOP_VX_CM_PER_YR} cm/yr in top {OVR_TOTAL_THICK} km "
@@ -587,6 +588,8 @@ v_over_nd = float(GEO.nd(float(OVR_TOP_VX_CM_PER_YR) * u.centimeter / u.year))  
 # -------------------------
 xL = X_DOMAIN[0] * u.kilometer
 xB = X_BREAK      * u.kilometer
+xR = X_DOMAIN[1] * u.kilometer
+xO0 = float(OVR_TOP_XSTART_KM) * u.kilometer
 
 # espesores “driving” (dimensional, positivos; z es negativo hacia abajo)
 SLAB_DRV_THICK = float(SLAB_THICKNESS)  * u.kilometer
@@ -603,18 +606,24 @@ x = Model.x  # ND
 z = Model.z  # ND, negativo hacia abajo
 
 # -------------------------
-# Top BC: solo slab vía ventana en X
+# Top BC por placas (slab / overriding) vía ventanas en X
 # -------------------------
 ramp_top_nd = float(GEO.nd(float(BC_RAMP_KM) * u.kilometer))
 xL_nd = float(GEO.nd(xL))
 xS_nd = float(GEO.nd(x_slab_driver_max))
+xO_nd = float(GEO.nd(xO0 + eps))
+xR_nd = float(GEO.nd(xR))
 
 t_up_slab = clamp01((x - xL_nd) / max(1e-30, ramp_top_nd))
 t_dn_slab = clamp01((xS_nd - x) / max(1e-30, ramp_top_nd))
 w_top_slab = smoothstep01(t_up_slab) * smoothstep01(t_dn_slab)
 
-# En top imponemos solo slab (+). Overriding entra por right wall (simétrico a left wall).
-vx_top_fn = v_slab_nd * w_top_slab
+t_up_over = clamp01((x - xO_nd) / max(1e-30, ramp_top_nd))
+t_dn_over = clamp01((xR_nd - x) / max(1e-30, ramp_top_nd))
+w_top_over = smoothstep01(t_up_over) * smoothstep01(t_dn_over)
+
+# En top imponemos Vx por segmento: slab (+) y overriding (-).
+vx_top_fn = v_slab_nd * w_top_slab + v_over_nd * w_top_over
 
 
 # -------------------------
@@ -691,6 +700,7 @@ if uw.mpi.rank == 0:
     )
     print(
         f"      top windows X (km): slab=[{xL.to(u.kilometer).m:.1f}, {x_slab_driver_max.to(u.kilometer).m:.1f}]"
+        f"  over=[{(xO0 + eps).to(u.kilometer).m:.1f}, {xR.to(u.kilometer).m:.1f}]"
     )
 
 ## TEST 01
