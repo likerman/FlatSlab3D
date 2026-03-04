@@ -36,6 +36,7 @@ class ModelConfig:
 
     n_trans_segments: int = 8
     n_xsub: int = 80
+    n_xsub_trans: int = 40
 
     # subduction
     x_break: float = 500.0
@@ -124,7 +125,7 @@ def validate_config(cfg: ModelConfig) -> None:
     if float(cfg.overlap) < 0.0:
         errors.append("overlap debe ser >= 0.")
 
-    for name in ("nx", "ny", "nz", "ppc", "pop", "n_trans_segments", "n_xsub"):
+    for name in ("nx", "ny", "nz", "ppc", "pop", "n_trans_segments", "n_xsub", "n_xsub_trans"):
         if int(getattr(cfg, name)) <= 0:
             errors.append(f"{name} debe ser entero positivo.")
 

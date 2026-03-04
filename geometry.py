@@ -148,6 +148,7 @@ def build_slab_shape(
     params,
     slab_thickness_km,
     n_xsub,
+    n_xsub_trans=None,
     n_trans_segments,
     x_overlap,
     y_overlap,
@@ -155,6 +156,8 @@ def build_slab_shape(
     timed=None,
 ):
     timed = timed or _noop_timed
+    if n_xsub_trans is None:
+        n_xsub_trans = n_xsub
     y = params["y_bands"]
 
     with timed("SLAB total build (all segments + union)"):
@@ -187,7 +190,7 @@ def build_slab_shape(
                 x_break=params["x_break"],
                 x_nodes=params["x_nodes_trans"],
                 n_trans_segments=n_trans_segments,
-                n_xsub=n_xsub,
+                n_xsub=n_xsub_trans,
                 z_top_at_break=0.0 * y["y_back_30N"].units,
                 x_overlap=x_overlap,
                 y_overlap=y_overlap,
@@ -223,7 +226,7 @@ def build_slab_shape(
                 x_break=params["x_break"],
                 x_nodes=params["x_nodes_trans"],
                 n_trans_segments=n_trans_segments,
-                n_xsub=n_xsub,
+                n_xsub=n_xsub_trans,
                 z_top_at_break=0.0 * y["y_back_30N"].units,
                 x_overlap=x_overlap,
                 y_overlap=y_overlap,
@@ -259,7 +262,7 @@ def build_slab_shape(
                 x_break=params["x_break"],
                 x_nodes=params["x_nodes_trans"],
                 n_trans_segments=n_trans_segments,
-                n_xsub=n_xsub,
+                n_xsub=n_xsub_trans,
                 z_top_at_break=0.0 * y["y_back_30N"].units,
                 x_overlap=x_overlap,
                 y_overlap=y_overlap,
@@ -295,7 +298,7 @@ def build_slab_shape(
                 x_break=params["x_break"],
                 x_nodes=params["x_nodes_trans"],
                 n_trans_segments=n_trans_segments,
-                n_xsub=n_xsub,
+                n_xsub=n_xsub_trans,
                 z_top_at_break=0.0 * y["y_back_30N"].units,
                 x_overlap=x_overlap,
                 y_overlap=y_overlap,

@@ -48,6 +48,7 @@ Z_DOMAIN = cfg.z_domain
 
 N_TRANS_SEGMENTS = cfg.n_trans_segments
 N_XSUB = cfg.n_xsub
+N_XSUB_TRANS = cfg.n_xsub_trans
 
 X_BREAK = cfg.x_break
 X_END = cfg.x_end
@@ -127,6 +128,7 @@ print(f"  dips              = normal={DIP_normal}°, flat={DIP_wedge_flat}°")
 print(f"  thickness         = th_flat={TH_FLAT}, th_cent={TH_CENT}")
 print(f"  slab thickness    = {SLAB_THICKNESS} km")
 print(f"  slab channel thk  = {SLAB_CHANNEL_THICKNESS} km")
+print(f"  slab x-subsegments = main:{N_XSUB} transition:{N_XSUB_TRANS}")
 print(f"  overriding total  = {OVR_TOTAL_THICK} km (layers {OVR_LAYER_THICK} km)")
 print(f"  wedge length      = {OVR_KNEE_LENGTH} km (max thick {OVR_MAX_THICK_WEDGE} km)")
 print(
@@ -363,6 +365,7 @@ slab_shape = build_slab_shape(
     params=geom,
     slab_thickness_km=SLAB_THICKNESS,
     n_xsub=N_XSUB,
+    n_xsub_trans=N_XSUB_TRANS,
     n_trans_segments=N_TRANS_SEGMENTS,
     x_overlap=X_OVERLAP,
     y_overlap=Y_OVERLAP,
